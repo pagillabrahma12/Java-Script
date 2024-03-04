@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove All LI Elements</title>
+</head>
+<body>
+  <ul id="myList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+  </ul>
+
+  <button onclick="removeListItems()">Remove All Items</button>
+
+  <script>
+    function removeListItems() {
+      // Get the reference to the parent list
+      var list = document.getElementById("myList");
+
+      // Remove all list items iteratively
+      while (list.firstChild) {
+        list.removeChild(list.firstChild);
+      }
+    }
+  </script>
+</body>
+</html>

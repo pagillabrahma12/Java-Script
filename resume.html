@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+h1{
+    color:blueviolet
+}
+    </style>
+</head>
+<body>
+    <script>
+        //title
+        var res=document.createElement("div")
+        res.innerText="RESUME";
+        res.style.width="99%";
+        res.style.height="5%";
+        res.style.fontSize="30px"
+        res.style.padding="10px"
+        res.style.textAlign="center"
+        res.style.color="darkgoldenrod"
+        res.style.backgroundColor="beige"
+        res.style.border="1px solid black"
+        document.body.appendChild(res);
+
+        //div1
+        var div1=document.createElement("div");
+        
+        document.body.appendChild(div1)
+        div1.style.display="flex";
+        div1.style.justifyContent="space-between";
+
+            //name
+
+        var head=document.createElement("h1")
+        head.innerText="Pagillabrahma";
+        head.style.fontSize="50px";
+        head.style.color="black"
+
+        div1.appendChild(head)
+
+        //photo
+
+        var imgg=document.createElement("img")
+        div1.appendChild(imgg)
+        imgg.setAttribute("src","./images/brahma.jpg")
+        imgg.style.width="150px"
+
+
+        //break line--hr
+
+        var hor=document.createElement("hr")
+         document.body.appendChild(hor)
+
+        var fieldsett = document.createElement("fieldset");
+
+            //objectives
+
+        fieldsett.innerText="Seeking a job where I can challenge my potential, put my skills to good use and grow my career exponentially. Hard-working, goal-oriented, and a team player seeking an opportunity to incorporate my skills and put them to use."
+         fieldsett.style.padding="15px"
+         
+         fieldsett.style.textAlign="center";
+      var divv=document.createElement("div");
+      var legendd = document.createElement("legend");
+      legendd.style.padding="5px"
+      legendd.innerHTML = "<h3>CARRER OBJECTIVE</h3>";
+        legendd.style.color="blueviolet"
+      fieldsett.appendChild(legendd);
+
+      document.body.appendChild(fieldsett);
+
+      //breakline--hr
+
+      var hrr2=document.createElement("hr")
+      document.body.appendChild(hrr2)
+
+      //education
+      
+      var fieldsett1=document.createElement("fieldset")
+      var legendd1=document.createElement("legend")
+      legendd1.innerHTML = "<h3>EDUCATION</h3>"
+      legendd1.style.textAlign="center";
+      legendd1.style.color="blueviolet"
+      fieldsett1.appendChild(legendd1);
+
+    document.body.appendChild(fieldsett1)
+  
+        var classes = [ "B.com in (computers) from Sri Sai Degree College", "Intermediate in (MEC) from Sri Gayatri Junior College", "SSC from St.Patricks High School High School"];
+        for(i=0;i<classes.length;i++)
+        {
+            var items1=document.createElement("li")
+            items1.innerText= classes[i];
+            items1.style.color="black"
+            items1.style.marginLeft="20px"
+            items1.style.fontsize="30px";
+            fieldsett1.appendChild(items1);
+
+        }
+        //line break---hr
+     var hrr3=document.createElement("hr");
+     document.body.appendChild(hrr3)
+
+
+     //techincal skills
+        //create filedsett and legend 
+
+        var fieldsett2=document.createElement("fieldset");
+        var legendd2=document.createElement("legend");
+        legendd2.innerHTML = "<h3>Techincal skills</h3>"
+        legendd2.style.textAlign="center";
+        
+        legendd2.style.color="blueviolet"
+        fieldsett2.appendChild(legendd2)
+        document.body.appendChild(fieldsett2)
+
+        var tech=["HTML","CSS","Java Script","Bootstrap","GitHub"];
+        
+        for(i=0;i<tech.length;i++){
+            var items2=document.createElement("li");
+            items2.innerText= tech[i];
+           items2.style.color="black"
+           items2.style.marginLeft="30px"
+           items2.style.fontsize="20px";
+           fieldsett2.appendChild(items2);
+
+        }
+        //line break
+
+    var hrr4=document.createElement("hr");
+     document.body.appendChild(hrr4);
+
+
+     //projectt
+     
+     var fieldsett3=document.createElement("fieldset");
+        var legendd3=document.createElement("legend");
+        legendd3.innerHTML = "<h3>Projects</h3>";
+        legendd3.style.textAlign="center";      
+        legendd3.style.color="blueviolet";
+        fieldsett3.appendChild(legendd3);
+        document.body.appendChild(fieldsett3);
+
+        //hobbies
+
+        var pro=["GYM portfolio","CV Portfolio"];
+        for(i=0;i<pro.length;i++){
+            var items3=document.createElement("li");
+            items3.innerText= pro[i];
+           items3.style.color="black"
+           items3.style.marginLeft="30px"
+           items3.style.fontsize="20px";
+           fieldsett3.appendChild(items3);
+        }
+        var hrr5=document.createElement("hr");
+    document.body.appendChild(hrr5);
+
+        //fieldset
+    var fieldsett4=document.createElement("fieldset");
+        var legendd4=document.createElement("legend");
+        legendd4.innerHTML = "<h3>Hobbies</h3>";
+        legendd4.style.textAlign="center";      
+        legendd4.style.color="blueviolet";
+        fieldsett4.appendChild(legendd4);
+        document.body.appendChild(fieldsett4);
+
+        var hobb=["Playing Cricket","Playing VolleyBall","Watching Movies","Listening Music"];
+        for(i=0;i<hobb.length;i++){
+            var items4=document.createElement("li");
+            items4.innerText= hobb[i];
+           items4.style.color="black"
+           items4.style.marginLeft="30px"
+           items4.style.fontsize="20px";
+           fieldsett4.appendChild(items4);
+        }
+        var hrr6=document.createElement("hr");
+    document.body.appendChild(hrr6);
+
+    var fieldsett5=document.createElement("fieldset");
+      var legendd5=document.createElement("legend");
+      legendd5.innerHTML = "<h3>Decleration</h3>";
+      legendd5.style.textAlign="center";      
+      legendd5.style.color="blueviolet";
+      fieldsett5.appendChild(legendd5);
+      document.body.appendChild(fieldsett5);
+
+      var pp=document.createElement("p")
+      pp.innerText="I hereby assure that the above mentioned information is true to the best of my knowledge.";
+      fieldsett5.appendChild(pp)
+      
+
+      var ppp=document.createElement("p")
+      ppp.innerText="(Pagilla brahma)";
+      pp.appendChild(ppp)
+      ppp.style.marginLeft="90%"
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

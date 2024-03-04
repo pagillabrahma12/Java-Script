@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         img:hover{
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+    <script>
+        var images=["./images/is.jpg","./images/car.webp","./images/fan.webp","./images/man.webp","./images/is.jpg","./images/car.webp","./images/fan.webp","./images/man.webp"];
+
+        //main divv
+        var maindivv=document.createElement("div");
+        document.body.appendChild(maindivv);
+        maindivv.style.width="600px";
+        maindivv.style.height="750px";
+        maindivv.style.margin="auto";
+        maindivv.style.border="1px solid black";
+        maindivv.style.display="flex";
+        maindivv.style.flexWrap="wrap";
+        maindivv.style.justifyContent="center";
+        maindivv.style.gap="5px";
+        maindivv.style.backgroundColor="rgb(130, 130, 234)";
+
+       for(i=0;i<images.length;i++){
+            var imgg=document.createElement("img");
+            maindivv.appendChild(imgg);
+            imgg.style.width="250px";
+            imgg.style.height="180px";
+            imgg.setAttribute("src",images[i]);
+        }
+
+
+
+    </script>
+</body>
+</html>

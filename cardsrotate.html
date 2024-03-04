@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>     
+    </style>
+</head>
+<body>
+    <script>
+        //main divvvv
+        var maindiv=document.createElement("div");
+        maindiv.style.border="1px solid black";
+        document.body.appendChild(maindiv);
+        maindiv.style.width="45%";
+        maindiv.style.height="590px";
+        maindiv.style.margin="auto";
+    
+        //img
+        var imga=document.createElement("img");
+        maindiv.appendChild(imga);
+        imga.setAttribute("src","./images/elephants.webp");
+        imga.style.width="280px";
+        imga.style.marginLeft="200px";
+        
+      //br --breakline
+      var brr=document.createElement("br");
+      maindiv.appendChild(brr);
+
+
+      let div1=document.createElement("div")
+        maindiv.appendChild(div1);
+      div1.style.width="100%";
+      div1.style.height="90px"
+      div1.style.backgroundColor="rgb(237, 161, 62)";
+      div1.style.display="flex";
+      div1.style.justifyContent="space-evenly"
+      div1.style.textAlign="center"
+           
+      //button
+
+    let butt=document.createElement("button");
+    div1.appendChild(butt);
+    butt.innerText="Rotate 180deg";
+    butt.style.width="200px";
+    butt.style.height="50px";
+    butt.style.color="rgb(113, 6, 6)";
+    butt.style.fontSize="20px"
+    butt.style.textAlign="center"
+    butt.style.backgroundColor="burlywood"
+    butt.style.fontFamily="'Courier New', Courier, monospace"
+    butt.style.borderRadius="20px";
+
+      //onclick and function done here for 1st button
+
+      butt.addEventListener("click",rooo)
+      function rooo(){
+        imga.style.transform="rotate(180deg)"
+      }
+
+      //onclick and function done here for 2nd button
+    let butt1=document.createElement("button");
+   div1.appendChild(butt1);
+   butt1.innerText="Rotate to Normal";
+   butt1.style.width="200px";
+   butt1.style.height="50px";
+   butt1.style.color="rgb(113, 6, 6)";
+   butt1.style.fontSize="20px"
+   butt1.style.textAlign="center"
+   butt1.style.backgroundColor="burlywood"
+   butt1.style.fontFamily="'Courier New', Courier, monospace"
+   butt1.style.borderRadius="20px";
+
+
+   
+
+
+       
+       
+
+    </script>
+</body>
+</html>
